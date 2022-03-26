@@ -4,8 +4,8 @@ body {
   background-color: lightblue;
 }
 
-.mathButton {
-  font-size: 1.5em;
+.button {
+  font-size: 1.2em;
   border: 2px;
   border-color: black;
   border-style: solid;
@@ -16,4 +16,10 @@ body {
 blockquote {
   font-size: 0.8em;
   font-style: italic;
+}
+
+
+
+#buttonsContainer {
+  display: flex; /* or inline-flex */
 }
