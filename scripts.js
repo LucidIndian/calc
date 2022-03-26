@@ -1,32 +1,35 @@
-// CALCULATOR FUNCTIONS
+// CALCULATOR Scripts
 
 console.log("JS file is linked!");
 
+// Variables
+let testnumOne = 3;
+let testnumTwo = 6;
+let testOperator = "*";
+
 // ADD FUNCTION
-
-function add () {
-
+function add (num1, num2) {
+  console.log("add fxn invoked");
+  console.log(num1 + num2);
 } // end of fxn
-
 
 // SUBTRACT FUNCTION
-
-function subtract () {
-
-} // end of fxn
+function subtract (num1, num2) {
+  console.log("subtract fxn invoked");
+  console.log(num1 - num2);
+}; // end of fxn
 
 // DIVIDE FUNCTION
-
-function divide () {
-
-} // end of fxn
+function divide (num1, num2) {
+  console.log("divide fxn invoked");
+  console.log( num1 / num2 );
+}; // end of fxn
 
 // MULTIPLY FUNCTION
-
-
-function multiply () {
-
-} // end of fxn
+function multiply (num1, num2) {
+  console.log("multiply fxn invoked");
+  console.log( num1 * num2 );
+}; // end of fxn
 
 
 // OPERATE FUNCTION
@@ -34,9 +37,24 @@ function multiply () {
 // an operator and 2 numbers and then calls 
 // one of the above functions on the numbers.
 
+function operate(operator, num1, num2) {
 
-function operate (operator, num1, num2) {
+  if (operator === "+" ) {
+    add (num1, num2);
+    console.log("add fxn should fire next");
+  } else if (operator === "-" ) {
+    subtract (num1, num2);
+    console.log("subtract fxn should fire next");
+  } else if (operator === "*" ) {
+    multiply (num1, num2);
+    console.log("multiply fxn should fire next");
+  } else if (operator === "/" ) {
+    divide (num1, num2);
+    console.log("divide fxn should fire next");
+  }
+
+}; // end operate fxn
 
 
-}; // end of fxn
+operate("+", 30, 3); // test code for the console
 
