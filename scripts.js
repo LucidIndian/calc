@@ -1,8 +1,8 @@
 // CALCULATOR Scripts
-
 console.log("JS file is linked!");
 
-// Variables
+// VARIABLES
+let displayValue = ""; // for the display and the calc.
 
 
 // ADD FUNCTION
@@ -53,6 +53,33 @@ function operate(operator, num1, num2) {
 
 }; // end operate fxn
 
-
 operate("+", 30, 3); // test code for the console
+
+
+
+// BUTTON EVENT LISTENER
+  // Create an array from the nodelist of buttons on the HTML page:
+  const buttons = Array.from(document.querySelectorAll('button')); 
+  // Add the E.L. to each button so we know when each is clicked:
+  buttons.forEach(button => button.addEventListener('click', display));
+
+
+// DISPLAY FUNCTION
+// Create the functions that populate the display 
+// when you click the number buttons… you should be 
+// storing the ‘display value’ in a variable somewhere 
+// for use in the next step.
+
+function display(e) {
+  displayValue = e.target.id; // this grabs the HTML ID of the button and assigns it to the variable.
+ 
+  // Add the button click to the display:
+  const container = document.querySelector('#display');
+  const content = document.createElement('p');
+  content.textContent = displayValue; // should be variable from button click
+  content.style.color = 'red';
+  container.appendChild(content);
+    
+};  // end display fxn
+
 
