@@ -3,9 +3,7 @@
 console.log("JS file is linked!");
 
 // Variables
-let testnumOne = 3;
-let testnumTwo = 6;
-let testOperator = "*";
+
 
 // ADD FUNCTION
 function add (num1, num2) {

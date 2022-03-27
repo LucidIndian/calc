@@ -1,4 +1,5 @@
-/*CSS file*/
+/* CSS file for Tygh's Calc */
+/* Example image: https://help.apple.com/assets/61B370B8020DEA0A024710E6/61B370BA020DEA0A02471109/en_US/444e9701b92783985608b59943f635be.png */
 
 * {
   margin: 2px;
@@ -12,22 +13,27 @@ body {
   display: flex;
   justify-content: center;
   font-size: 1.8em;
-  border: 2px;
+  border: 1px;
   border-color: white;
   border-style: solid;
   border-radius: 12px;
-  width: 32px
+  width: 42px;
+  margin: 2px;
+}
+
+.ops {
+  background-color: orange;
 }
 
 blockquote {
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-style: italic;
 }
 
 #buttonsContainer {
   display: flex;
   flex-wrap: wrap;
-  width: 225px;
+  width: 210px;
   justify-content: space-evenly;
 }
 
